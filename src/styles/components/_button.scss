@@ -1,0 +1,46 @@
+.big-button {
+  background: $purple;
+  border: none;
+  border-bottom: 0.6rem solid darken($purple, 19%);
+  border-radius: 0.85rem;
+  color: white;
+  font-size: $l-size;
+  width: 100%;
+  padding: 2.4rem;
+  margin-bottom: $m-size;
+  font-family: "Lobster", cursive;
+  transition: all ease-in-out 200ms;
+  // font-family: "Julius Sans One", sans-serif;
+}
+
+.big-button:hover {
+}
+
+.big-button:disabled {
+  opacity: 0.5;
+}
+
+.button {
+  background: $purple;
+  border: none;
+  border-bottom: 0.3rem solid darken($purple, 19%);
+  color: white;
+  font-weight: 500;
+  padding: $s-size;
+  border-radius: 0.85rem;
+  font-family: "Lobster", cursive;
+}
+
+//modifier(beM)
+.button--link {
+  background: none;
+  border: none;
+  color: $off-white;
+  padding: 0;
+}
+
+@media (min-width: $desktop-breakpoint) {
+  .big-button {
+    margin-bottom: $xl-size;
+  }
+}
